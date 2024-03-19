@@ -37,13 +37,13 @@ def test_update_restaurant_genre(restaurant: RestaurantIn = restaurant):
     restaurant_upd = RestaurantOut(
         name=restaurant.name,
         address=restaurant.address,
-        city=restaurant.city,
+        menu=restaurant.menu,
         phone = restaurant.phone,
         id=1
     )
     assert dict(restaurant_upd) == {'name': restaurant.name,
                               'address': restaurant.address,
-                              'city': restaurant.city,
+                              'menu': restaurant.menu,
                               'phone': restaurant.phone,
                               'id': restaurant_upd.id
                               }
