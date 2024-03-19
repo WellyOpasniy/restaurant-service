@@ -3,7 +3,7 @@ from app.api.models import RestaurantIn, RestaurantOut
 
 restaurant = RestaurantIn(
     name='Blackstar',
-    addres='Moscow',
+    address='Moscow',
     menu='beef',
     phone='+7123456789'
 )
@@ -20,7 +20,7 @@ def test_create_restaurant(restaurant: RestaurantIn = restaurant):
 def test_update_restaurant_menu(restaurant: RestaurantIn = restaurant):
     restaurant_upd = RestaurantOut(
         name='Blackstar',
-        addres='Moscow',
+        address='Moscow',
         menu='beef',
         phone='+7123456789',
         id=1
